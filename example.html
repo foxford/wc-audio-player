@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AudioPlayer demonstration</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .wrapper {
+      clear: both;
+    }
+    .box {
+      width: 480px;
+      height: 480px;
+      margin-right: 40px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="box">
+    <audio-player
+      id="player"
+      label="Sample label for audio file"
+      src=""
+    ></audio-player>
+  </div>
+  <div class="box">
+    <form id="form1">
+      <label for="label">
+        <span>Label: <input id="label" type="text" placeholder="Insert label here"></span>
+      </label>
+      <br>
+      <label for="src">
+        <span>Source: <input id="src" type="text" placeholder="Insert source url here"></span>
+      </label>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.0.2/webcomponents-bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.0.2/custom-elements-es5-adapter.js"></script>
+<script src="dist/audio-player.js"></script>
+<script>
+  var player = document.getElementById('player')
+  var label = document.getElementById('label')
+  var src = document.getElementById('src')
+
+  label.addEventListener('input', function (e) {
+    player.setAttribute('label', e.target.value)
+  })
+  src.addEventListener('input', function (e) {
+    player.setAttribute('src', e.target.value)
+  })
+</script>
+</body>
+</html>
