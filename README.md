@@ -1,2 +1,2 @@
-# wc-audio-player
-`&lt;audio-player>` web component
+# &lt;audio-player&gt;
+`<audio-player>` web component

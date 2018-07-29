@@ -1,0 +1,113 @@
+.wrapper {
+  background-color: #f6f6f6;
+  border: solid 1px #d4d4d4;
+  border-radius: 5px;
+  user-select: none;
+}
+.row {
+  display: flex;
+}
+.row.row--justify-space-between {
+  justify-content: space-between;
+}
+.row .col.min {
+  flex: 0 1 auto;
+}
+.row .col.max {
+  flex: 1 1 auto;
+}
+.with-border-right {
+  border-right: solid 1px #d4d4d4;
+}
+.container {
+  padding: 20px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.button {
+  width: 40px;
+  height: 40px;
+}
+.button.sm {
+  width: 20px;
+  height: 20px;
+}
+.button.play {
+  background: transparent url('./images/play.svg') center center no-repeat;
+}
+.button.play:hover {
+  background: transparent url('./images/play-hover.svg') center center no-repeat;
+}
+.button.play:active {
+  background: transparent url('./images/play-active.svg') center center no-repeat;
+}
+.button.pause {
+  background: transparent url('./images/pause.svg') center center no-repeat;
+}
+.button.pause:hover {
+  background: transparent url('./images/pause-hover.svg') center center no-repeat;
+}
+.button.pause:active {
+  background: transparent url('./images/pause-active.svg') center center no-repeat;
+}
+.button.repeat {
+  margin-right: 10px;
+  background: transparent url('./images/repeat.svg') center center no-repeat;
+}
+.button.repeat:hover {
+  background: transparent url('./images/repeat-hover.svg') center center no-repeat;
+}
+.button.repeat:active {
+  background: transparent url('./images/repeat-active.svg') center center no-repeat;
+}
+.button.volume-up {
+  background: transparent url('./images/volume-up.svg') center center no-repeat;
+}
+.button.volume-up:hover {
+  background: transparent url('./images/volume-up-hover.svg') center center no-repeat;
+}
+.button.volume-up:active {
+  background: transparent url('./images/volume-up-active.svg') center center no-repeat;
+}
+.button.volume-down {
+  background: transparent url('./images/volume-down.svg') center center no-repeat;
+}
+.button.volume-down:hover {
+  background: transparent url('./images/volume-down-hover.svg') center center no-repeat;
+}
+.button.volume-down:active {
+  background: transparent url('./images/volume-down-active.svg') center center no-repeat;
+}
+.label {
+  font-size: 16px;
+  color: #333333;
+  word-break: break-all;
+}
+.progress {
+  width: 100%;
+  height: 2px;
+  margin: 8px 0 4px;
+  background-color: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+.progress > div {
+  width: 0;
+  height: 100%;
+  position: relative;
+  background-color: #48a1e6;
+}
+.progress > div > div {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: -3px;
+  right: -4px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.time {
+  font-size: 12px;
+  color: #333333;
+}

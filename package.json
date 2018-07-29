@@ -1,0 +1,28 @@
+{
+  "name": "@netology-group/wc-audio-player",
+  "version": "0.1.0",
+  "description": "`audio-player` web component",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "Aleksey Konstantinov <a.konstantinov@netology-group.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/lit-element": "~0.5.2",
+    "howler": "github:netology-group/howler.js#bugfix-ie-11-play-is-undefined"
+  },
+  "devDependencies": {
+    "autoprefixer": "~9.0.0",
+    "babel-core": "~6.26.3",
+    "babel-loader": "~7.1.4",
+    "babel-preset-env": "~1.7.0",
+    "cssnano": "~4.0.3",
+    "postcss-loader": "~2.1.6",
+    "postcss-url": "~7.3.2",
+    "webpack": "~4.12.0",
+    "webpack-cli": "~3.0.6"
+  }
+}
